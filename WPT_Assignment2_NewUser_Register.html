@@ -1,0 +1,83 @@
+<html>
+<head>
+<title> NewUser </title>
+
+</head>
+
+<body>
+
+<pre>
+<fieldset>
+<legend>NewUser</legend>
+
+<label>First Name</label>
+<input type="text" id="fname" required />
+
+<label>Last Name</label>
+<input type="text" id="lname" required />
+
+<label>Username</label>
+<input type="text" id="uname" required />
+
+<label>Email</label>
+<input type="email" id="email" required/>
+
+<label>Password</label>
+<input type="password" required />
+
+<label>Re-enter Password</label>
+<input type="password" required />
+
+
+
+
+<button type="button" onclick="registerUser()">Register</button>
+
+</fieldset>
+</pre>
+
+<h2>Registration Details</h2>
+
+<table border="1" id="regtable" style="display:none;">
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Username</th>
+<th>Email</th>
+
+</tr>
+
+<tr>
+<td id="tfname"></td>
+<td id="tlname"></td>
+<td id="tuname"></td>
+<td id="temail"></td>
+
+</tr>
+
+</table>
+
+
+<script>
+function registerUser(){
+
+var fname = document.getElementById("fname").value;
+var lname = document.getElementById("lname").value;
+var uname = document.getElementById("uname").value;
+var email = document.getElementById("email").value;
+
+
+
+
+document.getElementById("tfname").innerHTML = fname;
+document.getElementById("tlname").innerHTML = lname;
+document.getElementById("tuname").innerHTML = uname;
+document.getElementById("temail").innerHTML = email;
+
+
+document.getElementById("regtable").style.display="table";
+}
+</script>
+
+</body>
+</html>

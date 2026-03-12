@@ -1,0 +1,34 @@
+form {
+	display: block;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    overflow: auto;
+	background-image: url("wal.jpg");
+	background-repeat : no-repeat;
+	
+}
+
+#tp {
+    display: block;
+    width: full;
+    height: 40px;
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    line-height: 40px;
+    margin: auto;
+    text-decoration: none;
+}
+
+#btm {
+    display: block;
+    width: full;
+    height: 40px;
+    background-color: black;
+    color: green;
+    text-align: center;
+    line-height: 40px;
+    margin: auto;
+    text-decoration: none;
+}
