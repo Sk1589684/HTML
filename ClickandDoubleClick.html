@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Click and Double Click Events</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<p>Click or Double Click this paragraph</p>
+<div>This is a div element</div>
+
+<script>
+$(document).ready(function(){
+
+    var timer;
+
+    $("*").on("click", function(){
+        var element = $(this);
+
+        timer = setTimeout(function(){
+            alert("Single Click Detected");
+        }, 250);
+    });
+
+    $("*").on("dblclick", function(){
+        clearTimeout(timer);
+        alert("Double Click Detected");
+    });
+
+});
+</script>
+
+</body>
+</html>     
