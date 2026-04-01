@@ -1,0 +1,19 @@
+{
+  "articles": [
+    {
+      "title": "India wins thrilling match against Australia",
+      "source": "BBC",
+      "date": "2026-03-24"
+    },
+    {
+      "title": "New AI technology revolutionizes healthcare",
+      "source": "CNN",
+      "date": "2026-03-23"
+    },
+    {
+      "title": "Stock markets hit record high",
+      "source": "Reuters",
+      "date": "2026-03-22"
+    }
+  ]
+}
