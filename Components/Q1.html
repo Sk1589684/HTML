@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <script>
+            function Verify()
+            {
+                let uid =document.getElementById("user").value;
+
+                let pass =document.getElementById("pass").value;
+
+                
+
+               if(uid=="iet" && pass=="123" ||uid=="cdac" && pass=="456"||uid=="software" && pass=="789")
+            {
+                console.log("Login SuccessFul");
+                let a=document.getElementById("result").innerText="Login Successfull"
+                alert("Login Successfull");
+
+            }
+            
+            //    else if(uid=="cdac" && pass=="456")
+            // {
+            //     console.log("Login SuccessFul");
+            //     let a=document.getElementById("result").innerText="Login Successfull"
+            //      alert("Login Successfull");
+
+            // }
+            
+            // else if(uid=="software" && pass=="789")
+            // {
+            //     console.log("Login SuccessFul");
+            //     let a=document.getElementById("result").innerText="Login Successfull"
+            //      alert("Login Successfull");
+
+            // }
+            else{
+                console.log("Please Enter Coreect Credentials");
+                let a=document.getElementById("result").innerText="Please Enter Correct Credentials";
+                 alert("Unsuccessful");
+            }
+            }
+        </script>
+       
+    </head>
+
+    <body>
+        <fieldset>
+        <div class="C1">
+            UserName:<input type="text" id="user" name="us" placeholder="Enter UserName " required><br>
+        </br>
+            Password:<input type="password" id="pass" name="ps" placeholder="Enter Password " required>
+
+            <br>
+            <button onclick=Verify()>Submit</button>
+        </div>
+
+        <p id="result" ></p>
+        </fieldset>
+    </body>
+</html>

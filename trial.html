@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            function display()
+            {
+                let day=document.getElementById("dt").value;
+
+             if(day!=""){
+
+            let b=document.getElementById("para").innerHTML=day;
+                
+                console.log("Date is printed")
+            }
+            else
+            {
+                alert("Please Enter Date");
+            }
+        }
+
+            
+        </script>
+    </head>
+
+    <body>
+        Enter Date:<input type="date" id="dt" />
+
+        <button onclick="display()">Display</button>
+
+        <p>Date Will Be Displayed Here</p>
+        
+        <p id="para"></p>
+
+
+
+    </body>
+</html>

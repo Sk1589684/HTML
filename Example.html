@@ -1,0 +1,54 @@
+
+<html>
+<head>
+    <title>Array Input Example</title>
+</head>
+<body>
+
+    <h2>Enter Values</h2>
+
+    <input type="text" id="inputValue" placeholder="Enter something">
+    <button onclick="addValue()">Add</button>
+
+    <h3>Array Values:</h3>
+    <ul id="list"></ul>
+
+    <script>
+        let arr = [];
+
+        function addValue() {
+            let input = document.getElementById("inputValue").value;
+
+            if (input === "") {
+                alert("Please enter a value");
+                return;
+            }
+
+            // Add value to array
+            arr.push(input);
+
+            console.log(arr); // check in console
+
+            // Display values
+            display();
+
+            // Clear input box
+            document.getElementById("inputValue").value = "";
+        }
+
+        function display() {
+            let list = document.getElementById("list");
+            list.innerHTML = "";
+
+            arr.forEach((item) => {
+                let li = document.createElement("li");
+                li.textContent = item;
+                list.appendChild(li);
+            });
+        }
+    </script>
+
+</body>
+</html>
+
+
